@@ -135,6 +135,8 @@ ctest --test-dir build --output-on-failure
 ./scripts/format.sh --check
 ```
 
+GitHub Actions (`.github/workflows/ci.yml`) runs format and tests on every pull request.
+
 ## When adding code
 
 1. Keep the two-endpoint surface small. No speculative features.

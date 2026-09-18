@@ -179,6 +179,9 @@ in-process mock server by default, or the live API when `TYPESAFE_LIVE=1`.
 ctest --test-dir build --output-on-failure
 ```
 
+Pull requests run the same checks in GitHub Actions (`.github/workflows/ci.yml`):
+`./scripts/format.sh --check`, then configure, build, and `ctest`.
+
 `tests/contract_test.cpp` mirrors the Rust `tests/contract.rs`;
 `tests/examples_test.cpp` mirrors `tests/examples_integration.rs`;
 `tests/unit_test.cpp` covers the backoff table, retry status set, error message
